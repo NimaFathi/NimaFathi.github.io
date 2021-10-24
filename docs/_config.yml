@@ -1,55 +1,61 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site
+# repository: sproogen/resume-theme
+# favicon: images/favicon.ico
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# Personal info
+name: "Nima Fathi"
+#title: Blah
+email: nima0fathi@gmail.com
+
+# Social links
+# twitter_username: facespics
+github_username:  NimaFathi
+
+# googlescholar_username: Gv9ET40AAAAJ
+
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: chillwildlife
+linkedin_username: NimaFathi
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+
+# About Section
+# about_title: About Me
+about_profile_image: images/personal_photo.png
+about_content: | # this will include new lines to allow paragraphs
+  **CV: [PDF](https://NimaFathi.github.io/files/cv.pdf)**
+
+  
+  Currently, I am a B.Sc. senior student majoring in Computer Engineering at the **Sharif University of Technology (SUT)**. 
+  In December 2020, I joined the Robust & Interpretable Machine Learning Lab (RIML) in SUT as a **research assistant**. 
+  Since then, I have been researching Computer Vision with an emphasis on developing deep learning methods for medical applications. 
+  In July 2021, I received a prestigious research internship from the Visual Intelligence for Transportation (VITA Lab), **Swiss Federal Institute of Technology Lausanne (EPFL)**.
+  This internship allowed me to work with **Prof. Alahi**, one of the most prominent professors in transportation and socially-aware artificial intelligence, on the challenging topic of Pose & Trajectory Forecasting.
+  My research interests include **Computer Vision**, **Medical Imaging**, **Autonomous Driving**, and **Machine Learning**. 
+# Projects Section
+# projects_title: Publications
+
+# Experience Section
+# experience_title: Experience
+
+# Education Section
+# educaton_title: Education
+
+# More Section
+# more_title: A Little More About Me
+
+# Footer
+footer_show_references: true
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+remote_theme: NimaFathi/nimafathi.github.io
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
