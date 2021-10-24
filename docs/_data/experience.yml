@@ -1,0 +1,67 @@
+- company: Swiss Federal Institute of Technology Lausanne
+  job_title: Research Assistant
+  dates: Jul 2021 - Present
+  description: | # this will include new lines to allow paragraphs
+    In July 2021, I joined the Visual Intelligence for Transportation Lab ([VITA](https://www.epfl.ch/labs/vita/)), at Swiss Federal Institute of Technology Lausanne (EPFL), 
+    as a research assistant under the supervision of [Prof. Alexandre Alahi](https://people.epfl.ch/alexandre.alahi?lang=en). 
+    At first, I conducted a literature review on **Human Pose Prediction** in which I studied the recently emerging networks **Transformers**.
+    As a start, we participated in the Social Motion Forecasting challenge ([SoMoF](https://somof.stanford.edu/)), held by **Stanford University** and won the 3rd place.
+    Our proposed method outperformed the baselines of the challenge by over 20% and got accepted in the ICCV workshops 2021. 
+    After that we started to build a comprehensive library for Pose Prediction. I studied numerous different methods on pose prediction and gained a deep understanding of the topic. I also got proficient in Pytorch.
+    The current library supports 8 famous datasets, and 10 models, all of which I have implemented.
+  
+
+- company: Sharif University of Technology
+  job_title: Research Assistant
+  dates: Dec 2020 - Present
+  description: | # this will include new lines to allow paragraphs
+    In Dec. 2020, I joined the **Medical Image Analysis** group in Robust and Interpretable Machine Learning Lab ([RIML](http://sharif.ir/~rohban/)) as a research assistant under the supervision of 
+    [Prof. Rohban](https://scholar.google.com/citations?hl=en&user=pRyJ6FkAAAAJ&view_op=list_works&sortby=pubdate). He is one of the brightest profs in our department, and I consider myself very lucky to be able to work with him and learn from him.
+    We have been working on the NIH Chest x-ray dataset; a huge dataset consists of frontal-view chest images from more than 30,000 patients. We tested many different ideas to surpass state-of-the-art models.
+    Recently, we leveraged a transformer-based model, essentially based on Swin-transformer or shifted windows, a work by Microsoft research.
+    We leverage Swin and add muti-head MLP layers on top of that to perform better on multi-label classification, which is a must in our problem.
+    
+
+- company: CafeBazaar Inc.
+  job_title: Senior Software Engineer
+  dates: Jan 2021 - Jul 2021
+  description: |
+    I also have about a year of experience in the industry at [CafeBazaar](https://cafebazaar.ir/), the Iranian tech giant with a user-base of nearly 50-million. As a Software Engineer responsible for developing chat and notifications for end-users, we have also developed an AI-based model to detect harassment and other unwelcomed behaviors.
+
+- company: Yektanet
+  job_title: Senior Software Engineer
+  dates: Aug 2020 - Dec 2020
+  description: |
+    [Yektanet](https://en.yektanet.com/) is the most renowned online marketing service provider in Iran.
+    Worked in Core/Infrastructure team as a senior software engineer/Back-end developer.
+
+
+- company: Yektanet
+  job_title: Data Scientist
+  dates: May 2020 - Jul 2020
+  description: |
+    Worked in Data team at Yektanet, developed many projects such as estimating location of users for better advertisement recommendation.
+    My main project there was about predicting the approximate location of our users. We leverage a Bayesian approach, composing different types of data we had. For example, we scored users based on their approximate location coming from Push notifications and other data like buying a ticket for destiny or from which restaurant they order food.
+
+
+- company: Sharif University of Technology
+  job_title: Teaching Assistant
+  description: |
+    Some of my experiences as teaching assistant:
+    
+    **Spring 2021:**
+    + Modern Information Retrieval - Dr. M SOleymani (Head TA) 
+    + Artificial Intelligence - Dr. MH Rohban
+    + System Analysis and Design - Dr. A Heydarnoori (Head TA)
+    
+    **Fall 2020**
+    + Introduction to Bioinformatics - Dr. A Sharifi Zarchi
+    + Fundamentals of Programming - Dr. R Fakouri (Head TA)
+    + Computer Structure and Language - Prof. L Arshadi (Head TA)
+
+    **Spring 2020**
+    + Design of Algorithms - Dr. A Sharifi Zarchi
+    + Computer Structure and Language - Prof. L Arshadi (Head TA)
+        
+      
+    

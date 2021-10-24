@@ -1,0 +1,29 @@
+- name: Sharif Univeristy of Technology
+  dates: 2017 - Present
+  qualification: B.Sc. Computer Engineering
+  description: | # this will include new lines to allow paragraphs
+    Studying Computer Engineering at [Computer Engineering Department](http://ce.sharif.edu/).
+
+    **Related Courses:**
+    
+    Convolutional Neural Networks (online, audited) [cs224n Stanford]
+    Deep Learning (online, audited) [Andrew Ng]
+    Reinforcement Learning (online, audited) [David Silver]
+    Machine Learning (graduate), 
+    Artificial Intelligence,
+    Linear Algebra,
+    Bioinformatics,
+    Signals & Systems,
+    Probability and Statistics,
+    Design of Algorithms,
+    Data Structures and Algorithms,
+    Discrete Structures,    
+    GPA: 18.14/20.0
+    
+- name: Allameh Helli High School
+  dates: 2013-2017
+  qualification: Diploma
+  description: |
+    I received my Diploma in Mathematics and Physics from Allameh Helli, 
+    affiliated with the National Organization for the Development of Exceptional Talents (NODET).
+    GPA: [19.80/20.0]
