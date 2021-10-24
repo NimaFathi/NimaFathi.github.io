@@ -50,15 +50,3 @@
     <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad </span>
     
     P.S: In case that you cannot see repository it will be private till late November.
-    
-- name: Comp and Pred
-  description: |
-  ## ** CompAndPred: Complete and Predict Long-Term Human Body Pose & Trajectory**    
-
-    ---
-
-  Forecasting long-term human body pose has been one of the main problems that self-autonomous vehicles are dealing with the most.
-  Owing to noisy and incomplete input data, these agents could not predict pedestrians' future destinations accurate enough which may cause to fatal errors.
-  In this paper, we implement a novel model in which we leverage noisy incomplete data, very much like natural cases, and try to predict and complete these noisy inputs for long term.
-
-  <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad-(In Progress) </span>  
