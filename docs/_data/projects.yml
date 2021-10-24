@@ -55,7 +55,7 @@
   description: |
   ## ** CompAndPred: Complete and Predict Long-Term Human Body Pose & Trajectory**    
 
-  ---
+    ---
 
   Forecasting long-term human body pose has been one of the main problems that self-autonomous vehicles are dealing with the most.
   Owing to noisy and incomplete input data, these agents could not predict pedestrians' future destinations accurate enough which may cause to fatal errors.
