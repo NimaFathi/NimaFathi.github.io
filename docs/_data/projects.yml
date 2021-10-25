@@ -34,7 +34,7 @@
 
 
 - name: PosePred
-  image: images/posepred.jpg
+  image: images/noimage.jpg
   description: |
     ## **Human Body Pose Prediction Framework**
     
