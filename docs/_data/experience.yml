@@ -2,14 +2,14 @@
   job_title: Research Assistant
   dates: Jul 2021 - Present
   description: | # this will include new lines to allow paragraphs
-    In July 2021, I joined the Visual Intelligence for Transportation Lab ([VITA](https://www.epfl.ch/labs/vita/)), at Swiss Federal Institute of Technology Lausanne (EPFL), 
+    In July 2021, I joined the Visual Intelligence for Transportation Lab ([VITA](https://www.epfl.ch/labs/vita/)), at the Swiss Federal Institute of Technology Lausanne (EPFL), 
     as a research assistant under the supervision of [Prof. Alexandre Alahi](https://people.epfl.ch/alexandre.alahi?lang=en). 
     At first, I conducted a literature review on **Human Pose Prediction** in which I studied the recently emerging networks **Transformers**.
-    As a start, we participated in the Social Motion Forecasting challenge ([SoMoF](https://somof.stanford.edu/)), held by **Stanford University** and won the 3rd place.
+    As a start, we participated in the Social Motion Forecasting challenge ([SoMoF](https://somof.stanford.edu/)), held by **Stanford University**, and won 3rd place.
     Our proposed method outperformed the baselines of the challenge by over 20% and got accepted in the ICCV workshops 2021. 
-    After that we started to build a comprehensive library for Pose Prediction. I studied numerous different methods on pose prediction and gained a deep understanding of the topic. I also got proficient in Pytorch.
-    The current library supports 8 famous datasets, and 10 models, all of which I have implemented.
-  
+    After that, we started to build a comprehensive library for Pose Prediction. I studied numerous different methods of pose prediction and gained a deep understanding of the topic. I also got proficient in Pytorch.
+    The current library supports eight famous datasets, and ten models, all of which I have implemented.
+
 
 - company: Sharif University of Technology
   job_title: Research Assistant
@@ -17,7 +17,7 @@
   description: | # this will include new lines to allow paragraphs
     In Dec. 2020, I joined the **Medical Image Analysis** group in Robust and Interpretable Machine Learning Lab ([RIML](http://sharif.ir/~rohban/)) as a research assistant under the supervision of 
     [Prof. Rohban](https://scholar.google.com/citations?hl=en&user=pRyJ6FkAAAAJ&view_op=list_works&sortby=pubdate). He is one of the brightest profs in our department, and I consider myself very lucky to be able to work with him and learn from him.
-    We have been working on the NIH Chest x-ray dataset; a huge dataset consists of frontal-view chest images from more than 30,000 patients. We tested many different ideas to surpass state-of-the-art models.
+    We have been working on the NIH Chest x-ray dataset, a colossal dataset consisting of frontal-view chest images from more than 30,000 patients. We tested many different ideas to surpass state-of-the-art models.
     Recently, we leveraged a transformer-based model, essentially based on Swin-transformer or shifted windows, a work by Microsoft research.
     We leverage Swin and add muti-head MLP layers on top of that to perform better on multi-label classification, which is a must in our problem.
     
@@ -33,14 +33,15 @@
   dates: Aug 2020 - Dec 2020
   description: |
     [Yektanet](https://en.yektanet.com/) is the most renowned online marketing service provider in Iran.
-    Worked in Core/Infrastructure team as a senior software engineer/Back-end developer.
+    I have Worked in Core/Infrastructure team as a senior software engineer/Back-end developer for almost 9 months. Developing Base functionalities of all services of the enterprise using Django framework and NodeJS. It is safe to say that our team was the most crucial part of the firm. One minute of downtime on our side would have caused a lot of troubles and ugliness for both customers (websites) and users on the Persian network.
+    We basically managed ads on almost all of the top 250 websites in Iran and being reliable, fast, and secure was a must on our side, handling which was the direct job of the Core team.  
 
 
 - company: Yektanet
   job_title: Data Scientist
   dates: May 2020 - Jul 2020
   description: |
-    Worked in Data team at Yektanet, developed many projects such as estimating location of users for better advertisement recommendation.
+    For three months, I have worked in the Data team at Yektanet and developed many projects, such as estimating users' location for better advertisement recommendations.
     My main project there was about predicting the approximate location of our users. We leverage a Bayesian approach, composing different types of data we had. For example, we scored users based on their approximate location coming from Push notifications and other data like buying a ticket for destiny or from which restaurant they order food.
 
 
