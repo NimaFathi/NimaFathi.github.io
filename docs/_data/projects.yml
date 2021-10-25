@@ -53,9 +53,9 @@
 
 
 - name: Comp and Pred
-  image: images/x.png
+  image: images/posepred.png
   description: |
-  ## ** CompAndPred: Complete and Predict Long-Term Human Body Pose & Trajectory**    
+    ## ** CompAndPred: Complete and Predict Long-Term Human Body Pose & Trajectory**    
 
     ---
 
