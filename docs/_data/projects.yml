@@ -17,7 +17,7 @@
     
     
 - name: cxrSwiNet
-  image: images/cxrSwinNet.pdf
+  image: images/cxrSwinNet.jpg
   description: |
     ## **Multi-lable Classification Using Transformer-Based Backbone**
     
