@@ -17,7 +17,7 @@
     
     
 - name: cxrSwiNet
-  image: images/csrSwinNet.pdf
+  image: images/cxrSwinNet.pdf
   description: |
     ## **Multi-lable Classification Using Transformer-Based Backbone**
     
@@ -28,7 +28,7 @@
     It leverages manifold layers of Multi-Layer Perceptrons, also known as MLP, for the head architecture.
     We evaluate our model on one of the most extensive x-ray datasets called “Chest X-ray14”, which comprises more than 100,000 frontal-view images from over 30,000 patients with 14 famous chest diseases.
     Our model has been tested with several MLP layers for head settings; Each achieves a considerable AUC score on all classes. However, Comprehensive experiments on Chest X-ray14 have shown that a 3-layer head attains state-of-the-art performance with an average AUC score of 0.810. 
-    [**Source-Code](https://github.com/taslimisina/Swin-Transformer)
+    [**Source-Code**](https://github.com/taslimisina/Swin-Transformer)
 
     <span style="color:#900"> Sina Taslimi, Soroush Taslimi, **Nima Fathi**, Mohammadreza Salehi, Mohammad H. Rohban-(Manuscript In preparation)</span>          
 
@@ -45,8 +45,22 @@
     We achieved clean data from inconsistent **clinical data** using deformable registration techniques, including **Voxelmorph**.
     I proposed a model combining **LSTM with Conv3D** to extract temporal features for infarction delineation.
     Currently we are exploiting **transformers** to achieve state-of-the-art results.
+    [**Source-Code**](https://github.com/vita-epfl/posepred)
 
-
-    <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad </span>
+    <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad-(Manuscript In Preparation)</span>
     
     P.S: In case that you cannot see repository it will be private till late November.
+
+
+- name: Comp and Pred
+  image: 
+  description: |
+  ## ** CompAndPred: Complete and Predict Long-Term Human Body Pose & Trajectory**    
+
+    ---
+
+    Forecasting long-term human body pose has been one of the main problems that self-autonomous vehicles are dealing with the most.
+    Owing to noisy and incomplete input data, these agents could not predict pedestrians' future destinations accurate enough which may cause to fatal errors.
+    In this paper, we implement a novel model in which we leverage noisy incomplete data, very much like natural cases, and try to predict and complete these noisy inputs for long term.
+
+    <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad-(In Progress) </span>  

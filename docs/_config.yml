@@ -24,7 +24,7 @@ linkedin_username: NimaFathi
 
 # About Section
 # about_title: About Me
-about_profile_image: images/personal_photo.png
+about_profile_image: images/personal_photo.jpg
 about_content: | # this will include new lines to allow paragraphs
   **CV: [PDF](https://NimaFathi.github.io/files/cv.pdf)**
 
@@ -34,7 +34,7 @@ about_content: | # this will include new lines to allow paragraphs
   Since then, I have been researching Computer Vision with an emphasis on developing deep learning methods for medical applications. 
   In July 2021, I received a prestigious research internship from the Visual Intelligence for Transportation (VITA Lab), **Swiss Federal Institute of Technology Lausanne (EPFL)**.
   This internship allowed me to work with **Prof. Alahi**, one of the most prominent professors in transportation and socially-aware artificial intelligence, on the challenging topic of Pose & Trajectory Forecasting.
-  My research interests include **Computer Vision**, **Medical Imaging**, **Autonomous Driving**, and **Machine Learning**. 
+  My research interests include **Computer Vision**, **Deep Reinforcement Learning**,**Medical Imaging**, **Motion Forecasting**, **Autonomous Driving**, and **Interpretable Machine Learning**. 
 # Projects Section
 # projects_title: Publications
 
