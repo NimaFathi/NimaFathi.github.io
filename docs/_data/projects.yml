@@ -8,7 +8,7 @@
     **Human Pose Prediction** is defined as predicting the human keypoints locations for future frames, given the observed ones for past frames. 
     It has numerous applications in various fields like **Autonomous Driving**. 
     This task can be seen as a fine-grained task while human bounding box and trajectory prediction deal with more coarse-grained information. 
-    The former has been investigated less and here, we propose a **Recurrent Autoencoder Model** to do the harder task of pose prediction in the "Social Motion Forecasting" challenge conducted by **Stanford University**. 
+    The former has been investigated less. Here, we propose a **Recurrent Autoencoder Model** to do the more challenging task of pose prediction in the "Social Motion Forecasting" challenge conducted by **Stanford University**. 
     The results show the effectiveness of our method as it outperforms the available baselines by over 20% in evaluation metrics. 
     [**Source-Code**](https://github.com/Armin-Saadat/pose-prediction-autoencoder)
 
@@ -40,11 +40,8 @@
     
     ---
     
-    Early detection of myocardial infarction through specific biomarkers in **cardiac MR images** plays a critical role in developing support strategies proactively. 
-    We used cardiac MRI to segment scar tissues of heart causing possible future heart attacks.
-    We achieved clean data from inconsistent **clinical data** using deformable registration techniques, including **Voxelmorph**.
-    I proposed a model combining **LSTM with Conv3D** to extract temporal features for infarction delineation.
-    Currently we are exploiting **transformers** to achieve state-of-the-art results.
+    Pospred is an open-source toolbox for pose prediction based on PyTorch. It is a part of the VitaLab project.
+    It has many handy features, which researchers of the field can readily put into use, like various datasets, a colossal model zoo, 2D visualizer, 3D visualizer, 3D to 2D overlay, and many more.
     [**Source-Code**](https://github.com/vita-epfl/posepred)
 
     <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad, Alexandre Alahi-(Manuscript In Preparation)</span>
