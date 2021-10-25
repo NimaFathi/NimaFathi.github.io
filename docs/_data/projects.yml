@@ -17,7 +17,7 @@
     
     
 - name: cxrSwiNet
-  image: images/cxrSwinNet.jpg
+  image: images/cxr2.jpg
   description: |
     ## **Multi-lable Classification Using Transformer-Based Backbone**
     
@@ -34,7 +34,7 @@
 
 
 - name: PosePred
-  image: images/posepred.png
+  image: images/posepred.jpg
   description: |
     ## **Human Body Pose Prediction Framework**
     
@@ -53,7 +53,7 @@
 
 
 - name: Comp and Pred
-  image: images/posepred.png
+  image: images/posepred.jpg
   description: |
     ## ** CompAndPred: Complete and Predict Long-Term Human Body Pose & Trajectory**    
 
