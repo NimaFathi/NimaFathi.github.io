@@ -19,7 +19,7 @@
 - name: cxrSwiNet
   image: images/cxr2.jpg
   description: |
-    ## **Multi-lable Classification Using Transformer-Based Backbone**
+    ## **Multi-lable Classification Using Transformer Backbone**
     
     ---
     According to the considerable growth in the avail of chest X-ray images as well as gathering extensive datasets, having an automated procedure using deep neural networks has occupied the minds of experts.
