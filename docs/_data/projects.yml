@@ -11,7 +11,7 @@
     We investigate our findings on several standard datasets (Human3.6M, JTA and 3DPW), and obtain a significant improvement over the state of the art.
     The code will be made available online upon publication.
     
-    <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad, Teylor Mordan, Alexandre Alahi-(Submitted CVPR'22) </span>  
+    <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad, Teylor Mordan, Alexandre Alahi - (Submitted CVPR'22) </span>  
 
 - name: Posepred_Method
   image: images/somof_method.png
@@ -25,10 +25,10 @@
     This task can be seen as a fine-grained task while human bounding box and trajectory prediction deal with more coarse-grained information. 
     The former has been investigated less. Here, we propose a **Recurrent Autoencoder Model** to do the more challenging task of pose prediction in the "Social Motion Forecasting" challenge conducted by **Stanford University**. 
     The results show the effectiveness of our method as it outperforms the available baselines by over 20% in evaluation metrics. 
-    [**Source-Code**](https://github.com/Armin-Saadat/pose-prediction-autoencoder)
+    [**Source-Code**](https://github.com/Armin-Saadat/pose-prediction-autoencoder) [**Report**](https://somof.stanford.edu/cgi-bin/public/ICCVSoMoF2021AllFiles/15/Supplementary/paper.pdf) [**ICCV Poster**](https://somof.stanford.edu/cgi-bin/public/ICCVSoMoF2021AllFiles/15/Supplementary/poster.pdf)
 
 
-    <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad, Alexandre Alahi</span> 
+    <span style="color:#900"> **Nima Fathi**, Armin Saadat, Saeed Saadatnejad, Alexandre Alahi - (Accepted, ICCV'21) </span> 
     
     
 - name: SwinCheX
