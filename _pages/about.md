@@ -7,7 +7,7 @@ affiliation: <a href='https://www.cs.tsinghua.edu.cn/csen/'>Department of Comput
 
 profile:
   align: left
-  image: photo_me.jpg
+  image: prof.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>555 your office number</p>
