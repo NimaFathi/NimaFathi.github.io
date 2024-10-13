@@ -716,7 +716,12 @@ footer.sticky-bottom {
           border: 1px solid var(--global-theme-color);
         }
       }
-
+      .honor-badge {
+        background-color: #f0ad4e;  // Different background color
+        color: white;
+        border: 1px solid #f0ad4e;
+      }
+      
       .title {
         font-weight: bolder;
       }
