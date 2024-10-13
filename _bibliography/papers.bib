@@ -1,25 +1,28 @@
 @article{fathi2024decodex,
-  abbr={arXiv},
+  abbr={MIDL},
   title={DeCoDEx: Confounder Detector Guidance for Improved Diffusion-based Counterfactual Explanations},
   author={Fathi, Nima and Kumar, Amar and Nichyporuk, Brennan and Havaei, Mohammad and Arbel, Tal},
   journal={Medical Imaging with Deep Learning},
   year={2024},
   pdf={https://arxiv.org/abs/2405.09288},
+  code={https://github.com/NimaFathi/DeCoDEx},
+  award={Oral},
   selected={true},
-  preview={diagram.png}
+  abstract={Deep learning classifiers are prone to latching onto dominant confounders present in a dataset rather than on the causal markers associated with the target class, leading to poor generalization and biased predictions. Although explainability via counterfactual image generation has been successful at exposing the problem, bias mitigation strategies that permit accurate explainability in the presence of dominant and diverse artifacts remain unsolved. In this work, we propose the DeCoDEx framework and show how an external, pre-trained binary artifact detector can be leveraged during inference to guide a diffusion-based counterfactual image generator towards accurate explainability. Experiments on the CheXpert dataset, using both synthetic artifacts and real visual artifacts (support devices), show that the proposed method successfully synthesizes the counterfactual images that change the causal pathology markers associated with Pleural Effusion while preserving or ignoring the visual artifacts. Augmentation of ERM and Group-DRO classifiers with the DeCoDEx generated images substantially improves the results across underrepresented groups that are out of distribution for each class.},
+  honor={Oral Presentation [Top 3.6%]},
 }
 
 @inproceedings{kumar2023debiasing,
-  abbr={arXiv},
-  title={https://arxiv.org/abs/2308.10984},
+  abbr={MICCAI},
+  title={Debiasing Counterfactuals In the Presence of Spurious Correlations},
   author={Kumar, Amar and Fathi, Nima and Mehta, Raghav and Nichyporuk, Brennan and Falet, Jean-Pierre R and Tsaftaris, Sotirios and Arbel, Tal},
   booktitle={Workshop on Clinical Image-Based Procedures},
   pages={276--286},
   year={2023},
   organization={Springer Nature Switzerland Cham},
-  pdf={},
+  pdf={https://arxiv.org/abs/2308.10984},
   selected={true},
-  preview={debiasing.webp}
+  abstract={Deep learning models can perform well in complex medical imaging classification tasks, even when basing their conclusions on spurious correlations (i.e. confounders), should they be prevalent in the training dataset, rather than on the causal image markers of interest. This would thereby limit their ability to generalize across the population. Explainability based on counterfactual image generation can be used to expose the confounders but does not provide a strategy to mitigate the bias. In this work, we introduce the first end-to-end training framework that integrates both (i) popular debiasing classifiers (e.g. distributionally robust optimization (DRO)) to avoid latching onto the spurious correlations and (ii) counterfactual image generation to unveil generalizable imaging markers of relevance to the task. Additionally, we propose a novel metric, Spurious Correlation Latching Score (SCLS), to quantify the extent of the classifier reliance on the spurious correlation as exposed by the counterfactual images. Through comprehensive experiments on two public datasets (with the simulated and real visual artifacts), we demonstrate that the debiasing method: (i) learns generalizable markers across the population, and (ii) successfully ignores spurious correlations and focuses on the underlying disease pathology.}
 }
 
 @article{taslimi2022swinchex,
@@ -29,16 +32,17 @@
   journal={arXiv preprint arXiv:2206.04246},
   year={2022},
   pdf={https://arxiv.org/abs/2206.04246},
-  preview={cxrSwinNet.jpg},
-  selected={false}
+  selected={false},
+  abstract={According to the considerable growth in the avail of chest X-ray images in diagnosing various diseases, as well as gathering extensive datasets, having an automated diagnosis procedure using deep neural networks has occupied the minds of experts. Most of the available methods in computer vision use a CNN backbone to acquire high accuracy on the classification problems. Nevertheless, recent researches show that transformers, established as the de facto method in NLP, can also outperform many CNN-based models in vision. This paper proposes a multi-label classification deep model based on the Swin Transformer as the backbone to achieve state-of-the-art diagnosis classification. It leverages Multi-Layer Perceptron, also known as MLP, for the head architecture. We evaluate our model on one of the most widely-used and largest x-ray datasets called "Chest X-ray14," which comprises more than 100,000 frontal/back-view images from over 30,000 patients with 14 famous chest diseases. Our model has been tested with several number of MLP layers for the head setting, each achieves a competitive AUC score on all classes. Comprehensive experiments on Chest X-ray14 have shown that a 3-layer head attains state-of-the-art performance with an average AUC score of 0.810, compared to the former SOTA average AUC of 0.799. We propose an experimental setup for the fair benchmarking of existing methods, which could be used as a basis for the future studies. Finally, we followed up our results by confirming that the proposed method attends to the pathologically relevant areas of the chest.}
 }
 
 @inproceedings{saadat2021towards,
+  abbr={ICCV Workshops},
   title={Towards human pose prediction using the encoder--decoder LSTM},
   author={Saadat, Armin and Fathi, Nima and Saadatanejad, S},
   booktitle={Proc. ICCV Workshops},
   pages={1--12},
   year={2021},
-  preview={somof_method_hd.png},
-  selected={false}
+  selected={false},
+  pdf={https://somof.stanford.edu/cgi-bin/public/ICCVSoMoF2021AllFiles/15/Supplementary/paper.pdf}
 }
