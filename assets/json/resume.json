@@ -3,7 +3,7 @@
   "name": "Nima Fathi",
   "label": "Researcher in AI and Computer Engineering",
   "email": "nima0fathi@gmail.com",
-  "phone": "",  // Not provided in CV
+  "phone": "", 
   "url": "https://github.com/NimaFathi",
   "summary": "MSc student in Electrical and Computer Engineering at McGill University and a student researcher at Mila - Quebec AI Institute, with expertise in AI, counterfactual image synthesis, diffusion models, and generative models.",
   "location": {
