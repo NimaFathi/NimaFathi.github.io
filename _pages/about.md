@@ -2,8 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. student, <a href='https://ml.cs.tsinghua.edu.cn/'>TSAIL Group</a>
-affiliation: <a href='https://www.cs.tsinghua.edu.cn/csen/'>Department of Computer Science & Technology, Tsinghua University (China)</a>
+subtitle: 
+affiliation: 
 
 profile:
   align: left
@@ -19,6 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm a third-year Ph.D. student at the [Department of Computer Science and Technology, Tsinghua University](https://www.cs.tsinghua.edu.cn/csen/), advised by [Prof. Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml). Before that, I received my B.E. degree from the same department at Tsinghua University in 2022. In the summer of 2024, I was honored to have an internship at [NVIDIA Deep Imagination Research](https://research.nvidia.com/labs/dir/) in the San Francisco Bay Area.
 
-My research focuses on developing theoretically principled, insightful, scalable, efficient training and inference techniques for deep generative models, with a particular emphasis on diffusion-related models.
+I’m currently pursuing my M.Sc. at McGill University, where I work under the guidance of Professor Tal Arbel in the Probabilistic Vision Group ([PVG](https://www.cim.mcgill.ca/~pvg/)). My research delves into cutting-edge deep-learning techniques, specifically focusing on leveraging GANs and diffusion models to advance medical imaging. Recently, I embarked on an exciting journey as a Visiting Researcher at ServiceNow in Montreal. Here, my focus has shifted towards Diffusion Language Modeling, particularly through the use of Masked Discrete Diffusions—a field that holds immense potential for the future of AI-driven communication.
+
+Feel free to reach out if you share an interest in these areas, or want to chat about how these technologies can reshape industries!
