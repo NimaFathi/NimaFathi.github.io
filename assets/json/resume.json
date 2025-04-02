@@ -81,6 +81,12 @@
 ],
   "publications": [
   {
+    "name": "Unifying Autoregressive And Diffusion-Based Sequence Generation",
+    "publisher": "DelTa - ICLR'25",
+    "releaseDate": "2025",
+    "url": "https://openreview.net/forum?id=BpwDFTqyLz"
+  },
+  {
     "name": "DeCoDEx: Confounder Detector Guidance for Improved Diffusion-based Counterfactual Explanations",
     "publisher": "MIDL’24 ORAL",
     "releaseDate": "2024",
@@ -89,7 +95,7 @@
   },
   {
     "name": "Debiasing Counterfactuals In the Presence of Spurious Correlations",
-    "publisher": "MICCAI’23",
+    "publisher": "FAIMI - MICCAI’23",
     "releaseDate": "2023",
     "url": "https://arxiv.org/abs/2308.10984"
   },
