@@ -31,8 +31,8 @@
     "name": "ServiceNow",
     "position": "Visiting Researcher",
     "url": "https://www.servicenow.com/research/author/nima-fathi.html",
-    "startDate": "2024-08-01",
-    "endDate": "",
+    "startDate": "2024-07-01",
+    "endDate": "2025-04-01",
     "summary": "Fine-tuning large language models using Discrete Diffusion models.",
     "highlights": ["Developed and implemented innovative models in diffusion"]
   },
