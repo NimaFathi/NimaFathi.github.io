@@ -132,14 +132,23 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Nima's Blog # blog_name will be displayed in your blog page
+blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
+blog_description: My thoughts on AI, Machine Learning, and Research
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
   enabled: true
+  collection: posts
+  permalink: /page/:num/
+  per_page: 5
+  sort_field: date
+  sort_reverse: true
+  trail:
+    before: 1 # The number of links before the current page
+    after: 3  # The number of links after the current page
 
 related_blog_posts:
   enabled: true
@@ -148,15 +157,15 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
-  category: Comments # name of the category under which discussions will be created
-  category_id: # leave empty or specify your category_id (see https://giscus.app/)
-  mapping: title # identify discussions by post title
-  strict: 1 # use strict identification mode
-  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
-  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
+  repo: alshedivat/al-folio # <your-github-user-name>/<your-github-repo-name>
+  repo_id: MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==
+  category: Comments
+  category_id: DIC_kwDOA5PmLc4CTBt6
+  mapping: title
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  theme: preferred_color_scheme
   emit_metadata: 0
   lang: en
 
