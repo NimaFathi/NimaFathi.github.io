@@ -10,15 +10,6 @@ authors:
       name: "ServiceNow, Montreal"
       url: "https://www.servicenow.com"
 ---
-
-<d-title>
-<h1>Unifying Autoregressive and Diffusion Models for Better Sequence Generation</h1>
-<p>Exploring our novel framework that unifies autoregressive and diffusion-based sequence generation through hyperschedules and hybrid noising processes.</p>
-</d-title>
-
-<d-byline></d-byline>
-
-<d-article>
 <d-contents>
   <nav class="l-text figcaption">
     <h3>Contents</h3>
@@ -117,8 +108,6 @@ authors:
 <p>Read the full paper <a href="https://arxiv.org">here</a>.</p>
 
 <p>Stay tuned for more exciting updates!</p>
-
-</d-article>
 
 <d-appendix>
 <d-footnote-list></d-footnote-list>
