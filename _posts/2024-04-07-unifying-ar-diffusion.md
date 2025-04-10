@@ -2,7 +2,7 @@
 layout: distill
 title: Unifying Autoregressive and Diffusion Models for Better Sequence Generation
 description: Exploring our novel framework that unifies autoregressive and diffusion-based sequence generation through hyperschedules and hybrid noising processes.
-date: 2024-04-07
+date: 2025-04-07
 authors:
   - name: Nima Fathi
     url: "https://nimafathi.github.io"
@@ -10,64 +10,70 @@ authors:
       name: "ServiceNow, Montreal"
       url: "https://www.servicenow.com"
 ---
+
 <d-contents>
   <nav class="l-text figcaption">
     <h3>Contents</h3>
     <div><a href="#introduction">Introduction</a></div>
     <div><a href="#background">Background</a></div>
     <div><a href="#hyperschedules">Hyperschedules</a></div>
-    <div><a href="#hybrid-noising">Hybrid Noising</a></div>
-    <div><a href="#adaptive-correction">Adaptive Correction</a></div>
-    <div><a href="#results">Results</a></div>
-    <div><a href="#efficiency">Efficiency</a></div>
-    <div><a href="#conclusion">Conclusion</a></div>
+    <div><a href="#hybrid-noising">Hybrid Noising Processes</a></div>
+    <div><a href="#adaptive-correction">Adaptive Correction Sampler (ACS)</a></div>
+    <div><a href="#results">Experimental Results</a></div>
+    <div><a href="#efficiency">Efficiency via Attention Masks</a></div>
+    <div><a href="#conclusion">Conclusion and Future Work</a></div>
   </nav>
 </d-contents>
 
-<h2 id="introduction">Introduction</h2>
+## Introduction
 
-<p>Imagine combining the best of two powerful approaches: <strong>autoregressive (AR) models</strong>—like GPT—which generate sequences efficiently token by token, and <strong>diffusion models</strong>, known for their robustness in iterative refinement. In our recent work presented at the DeLTa Workshop (ICLR 2025), we made this happen. Here's how.</p>
+Imagine combining the efficiency of **autoregressive (AR) models**—like GPT—which generate sequences token by token—with the robustness of **diffusion models**, renowned for their iterative refinement and error correction. At the DeLTa Workshop (ICLR 2025), we presented a unified framework that brings these two approaches together. This post dives deeply into our methods and results, detailing how hyperschedules, hybrid noising, and adaptive correction yield significant improvements in sequence generation.
 
-<h2 id="background">Background: The Best of Both Worlds</h2>
+## Background
 
-<p>Autoregressive models like GPT are efficient but can't fix their mistakes. Diffusion models can correct themselves iteratively, but at a computational cost. Could we have the efficiency of AR with the robustness of diffusion?</p>
+AR models generate sequences one token at a time, predicting each token based on its predecessors. While this method is computationally efficient, errors cannot be revised once generated. Diffusion models, by contrast, generate sequences by gradually refining random noise, which allows for iterative corrections but is typically slower and more computationally expensive. Notably, AR models can be considered a special case of diffusion models with an extreme noising schedule—this insight paves the way for our unification.
 
-<p>We discovered that these seemingly different models actually belong to the same family. AR models can be viewed as an extreme case of diffusion, using a very particular noising schedule.</p>
+## Hyperschedules
 
-<h2 id="hyperschedules">Introducing Hyperschedules: Bridging AR and Diffusion</h2>
-
-<p>To unify AR and diffusion, we introduce <strong>hyperschedules</strong>, unique noise schedules that vary per token position. Traditional diffusion models uniformly apply noise, but our hyperschedules allow each token to have its own noising pattern, smoothly transitioning from AR-like generation to fully iterative diffusion.</p>
+To bridge AR and diffusion models, we introduce **hyperschedules**—custom noise schedules assigned to individual token positions. Traditional diffusion models apply noise uniformly across tokens; hyperschedules allow us to vary the noise level per token, creating a smooth continuum between strict autoregression and full diffusion.
 
 <figure>
   <img src="/assets/img/unifying_ar_diff/hyperschedules.png" alt="Hyperschedule Examples">
-  <figcaption>Examples of hyperschedules. From left to right: Quenched AR, Flat, Block, Slide Annealing.</figcaption>
+  <figcaption>Figure 1: Examples of hyperschedules: Quenched AR, Flat, Block, Slide Annealing.</figcaption>
 </figure>
 
-<p>These schedules let us generate sequences token by token (like AR) or iteratively (like diffusion)—or anywhere in between.</p>
+This flexibility enables our models to generate sequences either token-by-token (as in AR) or iteratively (as in diffusion), or even intermediate hybrid modes.
 
-<h2 id="hybrid-noising">Hybrid Noising: Teaching Models to Self-Correct</h2>
+## Hybrid Noising Processes
 
-<p>Diffusion models traditionally use either "absorb" (replacing tokens with a MASK) or "uniform" (randomly changing tokens). We introduced a <strong>hybrid noising process</strong> that combines both methods, allowing our models to detect and correct mistakes during generation.</p>
+Diffusion models often rely on two noising schemes:
+- **Absorbing process**: where tokens are replaced with a special MASK token.
+- **Uniform process**: where tokens are substituted randomly.
+
+Our **hybrid noising process** blends these two methods, introducing controlled errors (illustrated in red) while masking other tokens. This train-the-model-to-correct strategy facilitates robust sequence generation even when initial predictions are uncertain.
 
 <figure>
   <img src="/assets/img/unifying_ar_diff/hybrid_noising.png" alt="Hybrid Noising Illustration">
-  <figcaption>Hybrid noising introduces small controlled errors (red), guiding the model to learn corrections.</figcaption>
+  <figcaption>Figure 2: Hybrid noising introduces controlled errors (red tokens), guiding the model to learn corrections during generation.</figcaption>
 </figure>
 
-<h2 id="adaptive-correction">Adaptive Correction Sampler: Fixing Mistakes at Inference Time</h2>
+We explore two variants:
+- **γ-Hybrid**: employing an analytical approach based on SEDD.
+- **ε-Hybrid**: using a more straightforward weighted cross-entropy formulation as seen in MDM frameworks.
 
-<p>To fully leverage our hybrid noising, we introduced the <strong>Adaptive Correction Sampler (ACS)</strong>, a novel inference algorithm that lets models revisit and correct previously generated tokens. ACS significantly enhances sequence quality by reducing cumulative errors.</p>
+## Adaptive Correction Sampler (ACS)
 
-<h2 id="results">How Does It Perform? State-of-the-Art Results</h2>
+Building on hybrid noising, the **Adaptive Correction Sampler (ACS)** is our novel inference algorithm that allows the model to revisit and revise previous token decisions. Unlike traditional AR models—which do not modify past outputs—ACS adaptively corrects errors based on model confidence, reducing cumulative generation errors and yielding higher-quality sequences.
 
-<p>We tested our model on several language modeling benchmarks, outperforming existing diffusion-based methods in terms of perplexity and quality-diversity trade-offs.</p>
+## Experimental Results
+
+Our unified models were evaluated on several benchmarks, outperforming prior diffusion-based methods and established autoregressive baselines. Below is a performance comparison:
 
 <figure>
   <table>
     <thead>
       <tr>
         <th>Method</th>
-        <th>PTB</th>
         <th>WikiText</th>
         <th>Lambada</th>
         <th>Pubmed</th>
@@ -77,39 +83,87 @@ authors:
     <tbody>
       <tr>
         <td>Transformer (Sahoo et al.)</td>
-        <td>82.1</td><td>25.8</td><td>51.3</td><td>49.0</td><td>41.7</td>
+        <td>25.8</td><td>51.3</td><td>49.0</td><td>41.7</td>
+      </tr>
+      <tr>
+        <td>SEDD (Lou et al.)</td>
+        <td>36.0</td><td>48.9</td><td>45.4</td><td>40.0</td>
       </tr>
       <tr>
         <td>MDLM (Sahoo et al.)</td>
-        <td>91.0</td><td>33.2</td><td>48.3</td><td>43.1</td><td>37.9</td>
+        <td>33.2</td><td>48.3</td><td>43.1</td><td>37.9</td>
       </tr>
       <tr>
-        <td><strong>Hybrid Model (ours)</strong></td>
-        <td><strong>89.9</strong></td><td><strong>30.0</strong></td><td><strong>45.4</strong></td><td><strong>41.2</strong></td><td><strong>37.3</strong></td>
+        <td>BD3-LM (Arriola et al.)</td>
+        <td>31.3</td><td>50.0</td><td>42.5</td><td>39.2</td>
+      </tr>
+      <tr>
+        <td><strong>γ-Hybrid (Ours)</strong></td>
+        <td>30.0</td><td><strong>45.4</strong></td><td>46.6</td><td>40.6</td>
+      </tr>
+      <tr>
+        <td><strong>ε-Hybrid (Ours)</strong></td>
+        <td>32.5</td><td>50.2</td><td><strong>41.2</strong></td><td><strong>37.8</strong></td>
       </tr>
     </tbody>
   </table>
-  <figcaption>Performance comparison across different benchmarks</figcaption>
+  <figcaption>Table 1: Performance comparison across benchmarks. Bold indicates best performance.</figcaption>
 </figure>
+
+
+We further investigate the trade-off between sequence generation quality and diversity by analyzing generative perplexity against token-level entropy and MAUVE scores, as visualized in the following figure:
 
 <figure>
   <img src="/assets/img/unifying_ar_diff/perplexity_mauve.png" alt="Quality-Diversity Trade-offs">
-  <figcaption>Our hybrid models achieve better quality-diversity trade-offs compared to other diffusion models.</figcaption>
+  <figcaption>Figure 3: Hybrid models achieve better quality-diversity trade-offs compared to baseline diffusion models.</figcaption>
+</figure>
+ Our hybrid configurations consistently achieve superior positions on both Pareto frontiers, indicating enhanced generation fluency, coherence, and diversity compared to baselines. 
+The observed balance in generation quality and diversity establish a new state-of-the-art in diffusion-based sequence generation.
+
+## Efficiency via Attention Masks
+
+Efficiency is paramount for real-world deployment, and our approach facilitates this through advanced attention mechanisms. Our hyperschedules support **KV-caching-compatible attention masks**, which allow us to:
+- **Reuse settled tokens** (already generated and fixed) via KV-caching.
+- **Focus computations on active tokens** (currently being updated).
+
+Our framework is flexible—it supports both unmasking the MASK token (typical in masked language models) and predicting the next token (autoregressive style), echoing the strategies proposed in DiffuLLaMA. This dual capability enables the model to operate in diverse inference modes depending on the task.
+
+<figure>
+  <img src="/assets/img/unifying_ar_diff/transformer_aligned.jpg" alt="Attention Mask: Aligned Configuration" style="max-width:45%;">
+  <figcaption>Figure 4: Transformer-based sequence generator with an <strong>ALIGNED</strong> attention configuration, akin to masked language models.</figcaption>
 </figure>
 
-<h2 id="efficiency">Efficient Attention Masks for Faster Inference</h2>
+<figure>
+  <img src="/assets/img/unifying_ar_diff/transformer_shifted.jpg" alt="Attention Mask: Shifted Configuration" style="max-width:45%;">
+  <figcaption>Figure 5: Transformer-based sequence generator in a <strong>SHIFTED</strong> configuration, resembling autoregressive models.</figcaption>
+</figure>
 
-<p>Our hyperschedules also support KV-caching-compatible attention masks, making our method computationally efficient. This efficiency brings diffusion-based language models closer to the practical performance of AR models, crucial for real-world applications.</p>
+<figure>
+  <img src="/assets/img/unifying_ar_diff/attention_mask.jpg" alt="Training Attention Mask">
+  <figcaption>Figure 6: Example training attention mask for efficient token updates under both aligned and shifted configurations, highlighting the split between settled and active tokens.</figcaption>
+</figure>
 
-<h2 id="conclusion">Conclusion: A Unified Future</h2>
+From Appendix B, our models partition tokens into three components during generation:
+1. **Settled tokens**: Finalized outputs that can be cached.
+2. **Active tokens**: Those being actively updated.
+3. **Worthless tokens**: Tokens not yet generated or not relevant to the current context.
 
-<p>By unifying autoregressive and diffusion models through hyperschedules, hybrid noising, and adaptive sampling, we open exciting avenues for future research—especially for complex, reasoning-intensive tasks like code generation and logical reasoning.</p>
+This tailored attention mechanism reduces the effective computational load, thereby enhancing inference speed without sacrificing generation quality.
 
-<p>Read the full paper <a href="https://arxiv.org">here</a>.</p>
+## Conclusion and Future Work
 
-<p>Stay tuned for more exciting updates!</p>
+By unifying autoregressive and diffusion models through the innovations of hyperschedules, hybrid noising, and the Adaptive Correction Sampler, we achieve significant improvements in both sequence quality and efficiency. Our model is flexible enough to support multiple inference modes—whether unmasking tokens or predicting future tokens—making it highly adaptable to varied applications.
+
+Future research directions include:
+- Exploring a broader range of hyperschedule designs.
+- Extending the hybrid noising approach to new domains such as code generation.
+- Deepening theoretical understanding of noise scheduling and its impact on model performance.
+
+For further details, please refer to our full paper on [arXiv](https://arxiv.org/html/2504.06416v1).
+
+Stay tuned for more updates as we continue to push the boundaries of sequence generation!
 
 <d-appendix>
 <d-footnote-list></d-footnote-list>
 <d-citation-list></d-citation-list>
-</d-appendix> 
+</d-appendix>
