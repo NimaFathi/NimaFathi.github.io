@@ -11,6 +11,23 @@ authors:
       url: "https://www.servicenow.com"
 ---
 
+
+<!-- Hero Section -->
+<div class="hero-container" style="
+    width: 100%;
+    height: 300px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url('/assets/img/unifying_ar_diff/logo.png') center/contain no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+">
+</div>
+
 <d-contents>
   <nav class="l-text figcaption">
     <h3>Contents</h3>
@@ -33,14 +50,10 @@ authors:
 ## Introduction {#introduction}
 
 Recent advances in sequence generation have largely focused on two dominant paradigms: the efficiency of autoregressive (AR) models (e.g., GPT [1]) and the robust, iterative refinement of diffusion-based models [2]. However, each approach has its limitations—AR models propagate errors without revision, while diffusion models, despite their error-correcting capabilities, suffer from slower inference. In this post, we present our unified framework that combines the strengths of both paradigms through innovative techniques such as hyperschedules, hybrid noising, and an Adaptive Correction Sampler (ACS). By incorporating additional insights from our full paper and the corresponding appendix, we aim to deliver a comprehensive guide that takes roughly 15 minutes to read.
+
 ## Background & Motivation {#background-motivation}
 
 Autoregressive models (e.g., GPT [1]) generate text one token at a time, offering low latency but with the inherent risk of cumulative errors. Diffusion models, in contrast, iteratively refine noisy inputs to correct errors—albeit at a higher computational cost [2]. Our work bridges these two strategies, allowing for dynamic correction mechanisms and improved overall generation efficiency. This unification not only mitigates the shortcomings of each paradigm but also opens up new avenues for practical applications.
-<figure style="text-align:center;">
-  <img  src="/assets/img/unifying_ar_diff/unified_logo_green.png"
-        alt="Hybrid Noising Illustration"
-        style="width:25vw; height:auto; margin:0 auto; display:inline-block;">
-</figure>
 
 
 ## The Unified Framework {#unified-framework}
@@ -52,7 +65,7 @@ Our approach introduces a continuum between traditional autoregressive decoding 
 
 ## Hyperschedules {#hyperschedules}
 
-Standard diffusion models apply a uniform noise level across tokens. In our approach, hyperschedules assign a unique schedule to each token position, enabling a balance between the rigid structure of AR generation and the adaptability of diffusion. Our experiments (see Figure 1) highlight various designs—including “Quenched AR,” “Flat,” “Block,” and “Slide Annealing”—each with its own trade-offs in performance and efficiency.
+Standard diffusion models apply a uniform noise level across tokens. In our approach, hyperschedules assign a unique schedule to each token position, enabling a balance between the rigid structure of AR generation and the adaptability of diffusion. Our experiments (see Figure 1) highlight various designs—including "Quenched AR," "Flat," "Block," and "Slide Annealing"—each with its own trade-offs in performance and efficiency.
 
 <figure>
   <img src="/assets/img/unifying_ar_diff/hyperschedules.png" alt="Hyperschedule Examples">
