@@ -33,14 +33,15 @@ authors:
 ## Introduction {#introduction}
 
 Recent advances in sequence generation have largely focused on two dominant paradigms: the efficiency of autoregressive (AR) models (e.g., GPT [1]) and the robust, iterative refinement of diffusion-based models [2]. However, each approach has its limitations—AR models propagate errors without revision, while diffusion models, despite their error-correcting capabilities, suffer from slower inference. In this post, we present our unified framework that combines the strengths of both paradigms through innovative techniques such as hyperschedules, hybrid noising, and an Adaptive Correction Sampler (ACS). By incorporating additional insights from our full paper and the corresponding appendix, we aim to deliver a comprehensive guide that takes roughly 15 minutes to read.
+## Background & Motivation {#background-motivation}
+
+Autoregressive models (e.g., GPT [1]) generate text one token at a time, offering low latency but with the inherent risk of cumulative errors. Diffusion models, in contrast, iteratively refine noisy inputs to correct errors—albeit at a higher computational cost [2]. Our work bridges these two strategies, allowing for dynamic correction mechanisms and improved overall generation efficiency. This unification not only mitigates the shortcomings of each paradigm but also opens up new avenues for practical applications.
 <figure style="text-align:center;">
   <img  src="/assets/img/unifying_ar_diff/unified_logo_green.png"
         alt="Hybrid Noising Illustration"
         style="width:25vw; height:auto; margin:0 auto; display:inline-block;">
 </figure>
-## Background & Motivation {#background-motivation}
 
-Autoregressive models (e.g., GPT [1]) generate text one token at a time, offering low latency but with the inherent risk of cumulative errors. Diffusion models, in contrast, iteratively refine noisy inputs to correct errors—albeit at a higher computational cost [2]. Our work bridges these two strategies, allowing for dynamic correction mechanisms and improved overall generation efficiency. This unification not only mitigates the shortcomings of each paradigm but also opens up new avenues for practical applications.
 
 ## The Unified Framework {#unified-framework}
 
