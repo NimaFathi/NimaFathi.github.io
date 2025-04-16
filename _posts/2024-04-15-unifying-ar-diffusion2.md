@@ -28,6 +28,11 @@ authors:
   </nav>
 </d-contents>
 
+<figure>
+  <img src="/assets/img/unifying_ar_diff/unified_logo_green.png" alt="Hybrid Noising Illustration">
+</figure>
+
+
 ## Introduction {#introduction}
 
 Recent advances in sequence generation have largely focused on two dominant paradigms: the efficiency of autoregressive (AR) models (e.g., GPT [1]) and the robust, iterative refinement of diffusion-based models [2]. However, each approach has its limitations—AR models propagate errors without revision, while diffusion models, despite their error-correcting capabilities, suffer from slower inference. In this post, we present our unified framework that combines the strengths of both paradigms through innovative techniques such as hyperschedules, hybrid noising, and an Adaptive Correction Sampler (ACS). By incorporating additional insights from our full paper and the corresponding appendix, we aim to deliver a comprehensive guide that takes roughly 15 minutes to read.
