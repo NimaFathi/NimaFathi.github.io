@@ -127,7 +127,7 @@
   },
   {
     "name": "AgenticAI",
-    "keywords": ["LangChain", "LlamaIndex", "smolagents", "Haystack", "RAG", "VectorDBs"]
+    "keywords": ["LangChain", "LlamaIndex", "smolagents", "Haystack", "RAG", "VectorDB"]
   },
   {
     "name": "Web Development",
