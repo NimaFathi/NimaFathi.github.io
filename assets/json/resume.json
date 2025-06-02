@@ -1,11 +1,11 @@
 {
   "basics": {
   "name": "Nima Fathi",
-  "label": "Researcher in AI and Computer Engineering",
+  "label": "Machine Learning Researcher and AGI Advocate",
   "email": "nima0fathi@gmail.com",
   "phone": "", 
   "url": "https://github.com/NimaFathi",
-  "summary": "MSc student in Electrical and Computer Engineering at McGill University and a student researcher at Mila - Quebec AI Institute, with expertise in AI, counterfactual image synthesis, diffusion models, and generative models.",
+  "summary": "Ex MSc student in Electrical and Computer Engineering at McGill University and a student researcher at Mila - Quebec AI Institute, with expertise in AI, counterfactual image synthesis, diffusion models, and generative models.",
   "location": {
     "address": "",
     "postalCode": "",
@@ -47,25 +47,25 @@
   },
   {
     "name": "Yektanet Inc.",
-    "position": "Technical Leader & Software Engineer",
+    "position": "Machine Learning Engineer",
     "url": "https://yektanet.com",
     "startDate": "2020-08-01",
     "endDate": "2020-12-01",
-    "summary": "Led a 5-person team as Technical Leader, focusing on infrastructure and core systems.",
-    "highlights": ["Led the User Location Estimator (ULE) project.", "Contributed to content-based recommender systems."]
+    "summary": "Started as a data scientist in the Data team and was quickly promoted to a machine learning engineer for the Infrastructure team.",
+    "highlights": ["(@ Data team) Built content-based recommenders for ads and personalization.", "(@ Data team) Designed a geolocation system, increasing CTR by 6.1%.", "(@ Infrastructure team) Developed a real-time data pipeline for ad serving, improving latency by 30%.", "(@ Infrastructure team) Implemented a distributed system for large-scale data processing, enhancing scalability.", "(@ Infrastructure team) Owned and maintained backend and database services for internal tooling."]
   }
 ],
   "education": [
   {
-    "institution": "McGill University",
+    "institution": "MILA - Quebec AI Institute and McGill University",
     "location": "Montreal, Canada",
     "area": "Electrical and Computer Engineering",
     "studyType": "M.Sc.",
     "startDate": "2022-09-01",
     "endDate": "2025-09-01",
     "gpa": "4.0/4.0",
-    "summary": "Student Researcher at Mila - Quebec AI Institute.",
-    "courses": []
+    "summary": "Student Researcher at Mila - Quebec AI Institute, working on foundational research at the intersection of generative modeling and medical imaging.",
+    "courses": ["Multi-agent systems for counterfactual generation and visual explainability. (submitted work @ iccv workshops", "Diffusion and GAN-based approaches for counterfactual image synthesis.  (ORAL@ MIDL`24 and short-listed for Best Paper Award)", "Bias mitigation for improving robustness and generalization in medical imaging. (Published work @ MICAAI)", "Longitudinal generative modeling and trajectory forecasting for irregularly sampled time series."]
   },
   {
     "institution": "Sharif University of Technology",
@@ -75,16 +75,16 @@
     "startDate": "2017-09-01",
     "endDate": "2021-12-01",
     "gpa": "3.85/4.0",
-    "summary": "",
-    "courses": []
+    "summary": "Bsc Researcher @ RIML Lab",
+    "courses": ["Co-authored one of the earliest works applying Vision Transformers to medical imaging, establishing a benchmark for subsequent research."]
   }
 ],
   "publications": [
   {
     "name": "Unifying Autoregressive And Diffusion-Based Sequence Generation",
-    "publisher": "DelTa - ICLR'25",
+    "publisher": "ICLR’25 - DelTa",
     "releaseDate": "2025",
-    "url": "https://openreview.net/forum?id=BpwDFTqyLz"
+    "url": "https://arxiv.org/abs/2504.06416"
   },
   {
     "name": "DeCoDEx: Confounder Detector Guidance for Improved Diffusion-based Counterfactual Explanations",
@@ -124,6 +124,10 @@
   {
     "name": "Data & Parallelism",
     "keywords": ["DeepSpeed", "Megatron-LM", "PostgreSQL", "MongoDB"]
+  },
+  {
+    "name": "AgenticAI",
+    "keywords": ["LangChain", "LlamaIndex", "smolagents", "Haystack", "RAG", "VectorDBs"]
   },
   {
     "name": "Web Development",
