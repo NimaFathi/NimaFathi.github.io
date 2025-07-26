@@ -28,7 +28,7 @@ authors:
   </nav>
 </d-contents>
 
-<p><strong>About Me:</strong> I'm currently pursuing my M.Sc. at McGill University, working under the guidance of Professor Tal Arbel in the Probabilistic Vision Group (PVG). My research focuses on cutting-edge deep-learning techniques, specifically leveraging GANs and diffusion models to advance medical imaging.</p>
+<p><strong>About Me:</strong> I’m Nima Fathi, a deep-learning researcher with an M.Sc. in Electrical & Computer Engineering from McGill/Mila (supervised by Prof. Tal Arbel). My work sits at the intersection of computer vision and NLP—advancing medical-imaging AI with GANs and diffusion models, and pioneering diffusion language models via masked discrete diffusions as a Visiting Researcher at ServiceNow. Previously, I designed and scaled ML systems in industry (Divar, Yektanet) and have first-author publications at ICLR, COLM, MIDL, and MICCAI. I thrive on translating cutting-edge research into production-grade AI solutions.</p>
 
 <h2 id="introduction">Introduction</h2>
 
