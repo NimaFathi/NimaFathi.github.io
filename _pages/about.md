@@ -19,13 +19,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-
-Great timing for this refresh. Below is a clean, updated intro that reflects your current status, rebrands you around LLMs, Diffusion Language Models, and Agentic AI, and reframes the medical imaging and counterfactual work as the foundation built during your master’s at Mila.
-
-I kept the tone academic but modern, milestone-driven, and forward-looking. You can drop this directly into your website and tweak length if needed.
-
-⸻
-
 I have completed my M.Sc. in Electrical and Computer Engineering at McGill University, where I was supervised by Professor Tal Arbel in the Probabilistic Vision Group ([PVG](https://www.cim.mcgill.ca/~pvg/)) at Mila, the Quebec AI Institute. My research centers on language models, with a particular focus on Diffusion Language Models (DLMs) and Agentic AI systems that combine reasoning, generation, and tool use.
 
 My recent work explores alternatives to autoregressive LLMs through diffusion-based sequence modeling, as well as the design of multi-agent, multi-modal AI systems capable of reasoning over language, vision, and structured medical data. I have led and contributed to several projects at the intersection of LLMs, diffusion models, and agentic frameworks, including the development of large-scale discrete diffusion language models and medical AI agents that integrate perception, reasoning, and explanation.
