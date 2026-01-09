@@ -20,12 +20,20 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
-I’m currently pursuing my M.Sc. at McGill University, where I work under the guidance of Professor Tal Arbel in the Probabilistic Vision Group [PVG](https://www.cim.mcgill.ca/~pvg/). My research delves into cutting-edge deep-learning techniques, specifically focusing on leveraging GANs and diffusion models to advance medical imaging. Recently, I embarked on an exciting journey as a Visiting Researcher at ServiceNow in Montreal. Here, my focus has shifted towards Diffusion Language Modeling, particularly through the use of Masked Discrete Diffusions—a field that holds immense potential for the future of AI-driven communication.
+Great timing for this refresh. Below is a clean, updated intro that reflects your current status, rebrands you around LLMs, Diffusion Language Models, and Agentic AI, and reframes the medical imaging and counterfactual work as the foundation built during your master’s at Mila.
 
-I’m a Research Scientist at [MILA](https://mila.quebec/en) (Quebec AI Institute), where I design and build multi-agent, multi-modal AI systems for healthcare. My day-to-day work centers on creating interconnected agents that can analyze medical images, generate clinical narratives, answer diagnostic queries, and propose counterfactual explanations—all within a unified, scalable framework.
+I kept the tone academic but modern, milestone-driven, and forward-looking. You can drop this directly into your website and tweak length if needed.
 
-I began my journey at Sharif University of Technology, earning a B.Sc. in Computer Engineering in 2017. Drawn to the challenge of medical image analysis, I pursued an M.Sc. in Electrical and Computer Engineering at McGill University under [Prof. Tal Arbel](https://mila.quebec/en/directory/tal-arbel) in the Probabilistic Vision Group. There, I explored GANs, diffusion models, and 3D foundational architectures, laying the groundwork for explainable generative AI in medicine.
+⸻
 
-Following my master’s, I joined [ServiceNow Research](https://www.servicenow.com/research/) in Montreal as a Visiting Researcher and collaborated with [Pierre-André Noël](https://www.servicenow.com/research/author/pierre-andre-noel.html). I led the development of one of the first large-scale discrete diffusion language models, building an open-source framework capable of training and running at the billion-parameter scale. Through that work, I demonstrated how diffusion-based text generators can deliver 10–20× faster output than traditional autoregressive models without compromising quality—opening new possibilities for both cloud-based services and on-device applications.
+I have completed my M.Sc. in Electrical and Computer Engineering at McGill University, where I was supervised by Professor Tal Arbel in the Probabilistic Vision Group ([PVG](https://www.cim.mcgill.ca/~pvg/)) at Mila, the Quebec AI Institute. My research centers on language models, with a particular focus on Diffusion Language Models (DLMs) and Agentic AI systems that combine reasoning, generation, and tool use.
 
-Outside of work, when I am not tinkering with science, I enjoy reading books, watching movies, playing video games, and hanging out with friends and family.
+My recent work explores alternatives to autoregressive LLMs through diffusion-based sequence modeling, as well as the design of multi-agent, multi-modal AI systems capable of reasoning over language, vision, and structured medical data. I have led and contributed to several projects at the intersection of LLMs, diffusion models, and agentic frameworks, including the development of large-scale discrete diffusion language models and medical AI agents that integrate perception, reasoning, and explanation.
+
+A key milestone in this direction is AURA, a multi-modal medical agent designed for understanding, reasoning, and annotation across medical images and clinical context. This work was presented as an oral paper at MICCAI and received a Best Poster Award at the MedAgent Workshop, highlighting the growing role of Agentic AI in healthcare applications.
+
+During my master’s at [MILA](https://mila.quebec/en), I also conducted foundational research in generative modeling for medical imaging, including diffusion- and GAN-based methods for counterfactual generation, bias mitigation, and explainability. This work resulted in multiple publications at venues such as MIDL and MICCAI, and laid the groundwork for my current focus on agentic and language-centric AI systems.
+
+I have also worked as a Visiting Researcher at [ServiceNow Research](https://www.servicenow.com/research/) in Montreal, where I collaborated on one of the first large-scale diffusion-based language modeling frameworks, demonstrating that diffusion models can achieve competitive quality with significantly faster generation compared to traditional autoregressive models.
+
+Outside of research, I enjoy reading, watching films, playing video games, and spending time with friends and family.
